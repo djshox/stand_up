@@ -1,55 +1,53 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Modal from 'react-bootstrap/Modal';
-import {useHistory} from "react-router-dom"
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Modal from "react-bootstrap/Modal";
+import { useHistory } from "react-router-dom";
 
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import {Carousel} from 'react-responsive-carousel';
-import ReactPlayer from 'react-player';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
+import ReactPlayer from "react-player";
 import Breadcrumb from "react-bootstrap/esm/Breadcrumb";
 // import "./menu2.css";
 
-
 function Menu2() {
-    const h = useHistory()
+  const h = useHistory();
 
+  return (
+    <div className="menu-2-wrapper">
+      <div className="_navbar">
+        <Breadcrumb>
+          <Breadcrumb.Item onClick={() => h.push("/")}>Home</Breadcrumb.Item>
 
-    return (
-        <div className='menu-2-wrapper'>
+          <Breadcrumb.Item active>Birthday</Breadcrumb.Item>
+        </Breadcrumb>
+      </div>
 
-            <div className="_navbar">
-                <Breadcrumb>
-                    <Breadcrumb.Item onClick={()=>h.push("/")}>Home</Breadcrumb.Item>
-
-                    <Breadcrumb.Item active>Birthday</Breadcrumb.Item>
-                </Breadcrumb>
+      <div className="menu-birthday">
+        <Carousel>
+          <div className="item active">
+            <img
+              src="http://192.168.1.106/stand/images/Urmonov_R_S.jpg"
+              alt="Урмонов Р.С."
+            />
+            <div className="carousel-caption">
+              <h2>Урмонов Р.С.</h2>
+              <p>Сержант I степени</p>
             </div>
-
-<div className='menu-birthday'>
-    <Carousel>
-
-    <div className="item active">
-    <img src="http://localhost/stand/images/Urmonov_R_S.jpg"
-    alt="Урмонов Р.С." />
-    <div className="carousel-caption">
-    <h2>Урмонов Р.С.</h2>
-    <p>Сержант I степени</p>
+          </div>
+          <div className="item">
+            <img
+              src="http://192.168.1.106/stand/images/Kamoliddinov_A_U.jpg"
+              alt="Камолиддинов А.У."
+            />
+            <div className="carousel-caption">
+              <h3>Камолиддинов А.У.</h3>
+              <p>Сержант II степени</p>
+            </div>
+          </div>
+        </Carousel>
+      </div>
     </div>
-    </div>
-    <div className="item">
-    <img src="http://localhost/stand/images/Kamoliddinov_A_U.jpg"
-    alt="Камолиддинов А.У." />
-    <div className="carousel-caption">
-    <h3>Камолиддинов А.У.</h3>
-    <p>Сержант II степени</p>
-    </div>
-    </div>
-
-    </Carousel>
-</div>
-
-        </div>
-    );
+  );
 }
 
 export default Menu2;
