@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 function Menu() {
     return (
 
-        <div className='body'>
+        <div className='body backGround'>
             <div>
                 <span><span></span></span>
                 <div className="wrap">
@@ -18,12 +18,12 @@ function Menu() {
                     <Link to="/menu2">
                         <div style={{ backgroundImage: "url(" + require('./images/prisyaga.jpg') + ")" }}></div>
                     </Link>
-                    <Link to="/menu3">
-                        <div style={{ backgroundImage: "url(" + require('./images/prezident.jpg') + ")" }}></div>
-                    </Link>
-                    <a href="/menu4">
+                    <Link to="/">
                         <div style={{ backgroundImage: "url(" + require('./images/veteranlar.jpg') + ")" }}></div>
-                    </a>
+                    </Link>
+                    <Link to="/">
+                        <div style={{ backgroundImage: "url(" + require('./images/prisyaga.jpg') + ")" }}></div>
+                    </Link>
                     <Link to="/">
                         <div style={{ backgroundImage: "url(" + require('./images/kisspng.jpg') + ")" }}></div>
                     </Link>

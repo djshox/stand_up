@@ -40,18 +40,18 @@ function Menu2() {
 
                         <div className="item active">
                             <img src={BACKEND_URL + "stand/images/Urmonov_R_S.jpg"}
-                                alt="Урмонов Р.С." />
+                                alt="Иванов Р.С." />
                             <div className="carousel-caption">
-                                <h2>Урмонов Р.С.</h2>
-                                <p>Сержант I степени</p>
+                                <h2>Иванов Р.С.</h2>
+                                <p>Катта</p>
                             </div>
                         </div>
                         <div className="item">
                             <img src={BACKEND_URL + "stand/images/Kamoliddinov_A_U.jpg"}
-                                alt="Камолиддинов А.У." />
+                                alt="Азизов А.У." />
                             <div className="carousel-caption">
-                                <h3>Камолиддинов А.У.</h3>
-                                <p>Сержант II степени</p>
+                                <h3>Азизов А.У.</h3>
+                                <p>Ходим </p>
                             </div>
                         </div>
 
