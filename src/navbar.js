@@ -12,7 +12,7 @@ export default function Navbar(){
             <Breadcrumb>
                 <Breadcrumb.Item onClick={()=>h.push("/")}>Home</Breadcrumb.Item>
                 <Breadcrumb.Item onClick={()=>h.push("/menu1")}>
-                   Menu 1
+                   Back
                 </Breadcrumb.Item>
                 <Breadcrumb.Item active>&nbsp;&nbsp;</Breadcrumb.Item>
             </Breadcrumb>

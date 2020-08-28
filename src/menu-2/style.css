@@ -24,7 +24,7 @@ height: 100%;
   }
   
   .backGround{
-   background: radial-gradient(circle, #2779ae, #013b60 90%);
+   /* background: radial-gradient(circle, #2779ae, #013b60 100%); */
   }
 
 .neons {

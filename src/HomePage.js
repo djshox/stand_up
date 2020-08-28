@@ -71,6 +71,7 @@ export default class HomePage extends React.Component {
     // console.log("onEnded srabotal");
     if (this.state.video_url.includes("gimn.mp4")) {
       this.setState({ gimn_played: true, loop: true });
+      // console.log("gyjh", )
 
       ////////////////////////////////////////////////
       //                 POST to DB      gimn_played:false   this.state.gimn_played
@@ -179,7 +180,7 @@ export default class HomePage extends React.Component {
 
         /////////////////////////////////////////////////////////
       }
-    }, 25000); // setInterval()
+    }, 5000); // setInterval()
   };
 
   sendToPHP = (e) => {
