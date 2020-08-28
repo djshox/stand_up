@@ -3,9 +3,10 @@ import "./HomePage.css";
 import Player from "./Player";
 import axios from "axios";
 import Menu from "./Menu";
-import Menu1 from "./menu1";
-import { Route } from "react-router-dom";
-import ModalVideo from "./ModalVideo";
+// import Menu1 from './menu1'
+// import {Route} from "react-router-dom";
+// import ModalVideo from './ModalVideo'
+import { BACKEND_URL } from "setting.js";
 
 export default class HomePage extends React.Component {
   state = {
@@ -23,30 +24,33 @@ export default class HomePage extends React.Component {
     show_menu: true,
   };
 
-  componentWillMount() {
-    fetch("http://192.168.1.106/stand/time_plan.php")
+  componentDidMount() {
+    fetch(BACKEND_URL + "stand/time_plan.php")
       .then((response) => response.json())
       .then((responseJson) => {
         let stt_time = new Date(responseJson[0].start_time);
         let stp_time = new Date(responseJson[0].stop_time);
         //let time_id=responseJson[0].id;
-        this.setState({ start_time: stt_time, stop_time: stp_time });
+        this.setState({
+          start_time: stt_time,
+          stop_time: stp_time,
+        });
         this.testFunc();
 
-        console.log("Boshlangich vaqt: " + stt_time);
-        console.log("Tugash vaqt: " + stp_time);
+        // console.log("Boshlangich vaqt: " + stt_time);
+        // console.log("Tugash vaqt: " + stp_time);
       });
 
-    fetch("http://192.168.1.106/stand/get_videos.php")
+    fetch(BACKEND_URL + "stand/get_videos.php")
       .then((response) => response.json())
       .then((responseJson) => {
         // let set_video_gimn=responseJson[0].name;
-        let set_gimn_url = "http://192.168.1.106/stand/" + responseJson[0].url;
+        let set_gimn_url = BACKEND_URL + "stand/" + responseJson[0].url;
 
         // let set_video=responseJson[1].name;
-        let set_video_url = "http://192.168.1.106/stand/" + responseJson[1].url;
+        let set_video_url = BACKEND_URL + "stand/" + responseJson[1].url;
 
-        console.log(set_gimn_url);
+        // console.log(set_gimn_url);
         this.setState({
           set_gimn_url: set_gimn_url,
           set_video_url: set_video_url,
@@ -60,11 +64,11 @@ export default class HomePage extends React.Component {
   }
 
   componentWillUnmount() {
-    clearInterval(this.stout);
+    clearInterval(this.interval);
   }
 
   onEndedd = () => {
-    console.log("onEnded srabotal");
+    // console.log("onEnded srabotal");
     if (this.state.video_url.includes("gimn.mp4")) {
       this.setState({ gimn_played: true, loop: true });
 
@@ -94,7 +98,7 @@ export default class HomePage extends React.Component {
     let stop_Minutes = this.state.stop_time.getMinutes();
     let stop_Seconds = this.state.stop_time.getSeconds();
 
-    this.stout = setInterval(() => {
+    this.interval = setInterval(() => {
       let v = new Date(); // Joriy vaqt
       let yil = v.getFullYear(); // Joriy yil
       let oy = v.getMonth(); // Joriy Oy
@@ -121,9 +125,9 @@ export default class HomePage extends React.Component {
       );
       let vaqt1 = new Date(yil, oy, kun, soat, minut, sekund);
       //
-      //   console.log("Ertalabki vaqt: ", start_vaqt);
-      //   console.log("Kechki vaqt: ", stop_vaqt);
-      console.log("Hozirgi vaqt: ", vaqt1);
+      // console.log("Ertalabki vaqt: ", start_vaqt);
+      // console.log("Kechki vaqt: ", stop_vaqt);
+      // console.log("Hozirgi vaqt: ", vaqt1);
       //
       if (vaqt1 >= start_vaqt && vaqt1 < stop_vaqt) {
         this.setState({ show_menu: false });
@@ -131,17 +135,29 @@ export default class HomePage extends React.Component {
         // console.log("Hozirgi vaqt intervalda");
         if (this.state.show === false) {
           if (this.state.gimn_played === false) {
-            this.setState({ show: true, video_url: this.state.set_gimn_url });
+            this.setState({
+              show: true,
+              video_url: this.state.set_gimn_url,
+            });
           } /////   Gimn utib bulgan holat
           else {
-            this.setState({ show: true, video_url: this.state.set_video_url });
+            this.setState({
+              show: true,
+              video_url: this.state.set_video_url,
+            });
           }
         } //// Video aylanib turgan vaqt
         else {
           if (this.state.gimn_played === false) {
-            this.setState({ show: true, video_url: this.state.set_gimn_url });
+            this.setState({
+              show: true,
+              video_url: this.state.set_gimn_url,
+            });
           } else {
-            this.setState({ show: true, video_url: this.state.set_video_url });
+            this.setState({
+              show: true,
+              video_url: this.state.set_video_url,
+            });
           }
         }
       } else {
@@ -171,7 +187,7 @@ export default class HomePage extends React.Component {
     let formData = new FormData();
     formData.append("temp_data", this.state.insertetTxt);
     axios
-      .post("http://localhost/stand/temp.php", formData)
+      .post(BACKEND_URL + "stand/temp.php", formData)
       .then((res) => console.log(res.data.temp_data))
       .catch((err) => console.log(err));
   };

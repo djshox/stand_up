@@ -9,7 +9,7 @@ import Menu1Video from "./menu-1/video";
 
 export default class App extends React.Component {
   state = {
-    maxIntervalTime: 10,
+    maxIntervalTime: 1000,
     intervalTime: 0,
   };
 
@@ -27,7 +27,7 @@ export default class App extends React.Component {
     }
   }
 
-  componentWillMount() {
+  componentWillUnmount() {
     clearInterval(this.interval);
   }
 
