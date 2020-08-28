@@ -1,0 +1,30 @@
+.equipment2{
+
+    display: flex;
+    justify-content: center;
+   
+    background-color: white;
+
+}
+
+.equipment2__content{
+    width: 80%;
+    text-align: center;
+    /* text-align:  justify; */
+}
+
+.equipment2__img {
+    text-align: center;
+    width: 80%;
+}
+
+.equipment2__text{
+    text-align:  justify;
+}
+
+.hr_class{
+    border: none; /* Убираем границу для браузера Firefox */
+        color: black; /* Цвет линии для остальных браузеров */
+        background-color: black; /* Цвет линии для браузера Firefox и Opera */
+        height: 2px;
+}

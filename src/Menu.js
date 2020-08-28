@@ -13,16 +13,16 @@ function Menu() {
                 <span><span></span></span>
                 <div className="wrap">
                     <Link to="/menu1">
-                        <div style={{ backgroundImage: "url(" + require('./images/prezident.jpg') + ")" }}></div>
-                    </Link>
-                    <Link to="/menu2">
                         <div style={{ backgroundImage: "url(" + require('./images/tarix.jfif') + ")" }}></div>
                     </Link>
-                    <a href="#">
-                        <div style={{ backgroundImage: "url(" + require('./images/veteranlar.jpg') + ")" }}></div>
-                    </a>
-                    <a href="#">
+                    <Link to="/menu2">
                         <div style={{ backgroundImage: "url(" + require('./images/prisyaga.jpg') + ")" }}></div>
+                    </Link>
+                    <Link to="/menu3">
+                        <div style={{ backgroundImage: "url(" + require('./images/prezident.jpg') + ")" }}></div>
+                    </Link>
+                    <a href="/menu4">
+                        <div style={{ backgroundImage: "url(" + require('./images/veteranlar.jpg') + ")" }}></div>
                     </a>
                     <Link to="/">
                         <div style={{ backgroundImage: "url(" + require('./images/kisspng.jpg') + ")" }}></div>

@@ -16,7 +16,7 @@ function Menu2() {
 
 
     return (
-        <div className='menu-2-wrapper'>
+        <div className='menu-3-wrapper'>
 
             <div className="_navbar">
                 <Breadcrumb>

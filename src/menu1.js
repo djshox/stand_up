@@ -45,7 +45,7 @@ function Menu1() {
 
                 <div className="photos" onClick={() => h.push("/menu1/photos")}>
                     <div className="photos__body">
-                        <img onClick={handleShow} src={BACKEND_URL + "https://placeimg.com/200/133/nature/1"} className="rounded" width="30%" alt='q' />
+                        <img onClick={handleShow} src={"https://placeimg.com/200/133/nature/1"} className="rounded" width="30%"  />
                     </div>
                     <div className="photos__title" ><h1>Photos:</h1></div>
                 </div>
