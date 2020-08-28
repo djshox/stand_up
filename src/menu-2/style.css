@@ -1,0 +1,37 @@
+.menu-birthday {
+    box-sizing: border-box;
+    border: 2px solid red;
+    /* background-image: url("http://192.168.1.106:80/stand/images/happy1.jpg"); */
+    z-index: 999;
+    background-repeat: no-repeat;
+
+    /*background-size: cover;*/
+    margin: 0 auto;
+    height: 100%;
+    max-width: 75%;
+  }
+.menu-birthday img {
+  /*width: 100%;*/
+height: 100%;
+}
+  .menu-2-wrapper {
+    box-sizing: border-box;
+    border: 2px solid green;
+    margin: 1em 1.5em ;
+    height: 90vh;
+    /*display: flex;*/
+    /*justify-content: center;*/
+  }
+  
+  .backGround{
+   background: radial-gradient(circle, #2779ae, #013b60 100%);
+  }
+
+  .happy{
+    width: 200px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0.8;
+
+  }

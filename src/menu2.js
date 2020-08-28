@@ -43,7 +43,7 @@ function Menu2() {
                                 alt="Иванов Р.С." />
                             <div className="carousel-caption">
                                 <h2>Иванов Р.С.</h2>
-                                <p>Катта ходим</p>
+                                <p>Катта</p>
                             </div>
                         </div>
                         <div className="item">

@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import {BrowserRouter as Router} from "react-router-dom";
-
+import { BrowserRouter as Router } from "react-router-dom";
+import 'antd/dist/antd.css';
 ReactDOM.render(
-    <Router>
+  <Router>
     <App />
-    </Router>,
+  </Router>,
   document.getElementById('root')
 );
 
