@@ -184,3 +184,15 @@ a:hover div {
   /*display: flex;*/
   /*justify-content: center;*/
 }
+.menu-2-wrapper {
+  box-sizing: border-box;
+  border: 2px solid green;
+  margin: 1em 1.5em;
+  height: 90vh;
+  /*display: flex;*/
+  /*justify-content: center;*/
+}
+.backGround {
+  background: #4b4a0f;
+  height: 100vh;
+}

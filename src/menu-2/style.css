@@ -1,0 +1,52 @@
+.menu-birthday {
+    box-sizing: border-box;
+    border: 2px solid red;
+    /* background-image: url("http://192.168.1.106:80/stand/images/happy1.jpg"); */
+    z-index: 999;
+    background-repeat: no-repeat;
+
+    /*background-size: cover;*/
+    margin: 0 auto;
+    height: 100%;
+    max-width: 75%;
+  }
+.menu-birthday img {
+  /*width: 100%;*/
+height: 100%;
+}
+  .menu-2-wrapper {
+    box-sizing: border-box;
+    border: 2px solid green;
+    margin: 1em 1.5em ;
+    height: 90vh;
+    /*display: flex;*/
+    /*justify-content: center;*/
+  }
+  
+  .backGround{
+   background: radial-gradient(circle, #2779ae, #013b60 90%);
+  }
+
+.neons {
+   margin-top: 5px;
+   text-align: center;
+}
+
+.neons h4 {
+   font-weight: bold;
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+     from {
+      color: #fff;
+    text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2;
+  }
+  
+  to {
+     color: gray;
+    text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2;
+  }
+}

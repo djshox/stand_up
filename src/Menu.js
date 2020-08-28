@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 function Menu() {
     return (
 
-        <div className='body'>
+        <div className='body backGround'>
             <div>
                 <span><span></span></span>
                 <div className="wrap">
