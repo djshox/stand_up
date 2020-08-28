@@ -12,27 +12,27 @@ import Menu4 from "./menu-4";
 
 export default class App extends React.Component {
   state = {
-    maxIntervalTime: 1000,
+    maxIntervalTime: 30,
     intervalTime: 0,
   };
 
-  componentDidMount() {
-    this.interval = setInterval(() => {
-      this.setState((prev) => {
-        return { intervalTime: prev.intervalTime + 1 };
-      });
-    }, 1000);
-  }
+//   componentDidMount() {
+//     this.interval = setInterval(() => {
+//       this.setState((prev) => {
+//         return { intervalTime: prev.intervalTime + 1 };
+//       });
+//     }, 1000);
+//   }
 
-  componentDidUpdate() {
-    if (this.state.intervalTime === this.state.maxIntervalTime) {
-      this.resetIntervalTime();
-    }
-  }
+//   componentDidUpdate() {
+//     if (this.state.intervalTime === this.state.maxIntervalTime) {
+//       this.resetIntervalTime();
+//     }
+//   }
 
-  componentWillUnmount() {
-    clearInterval(this.interval);
-  }
+//   componentWillUnmount() {
+//     clearInterval(this.interval);
+//   }
 
   resetIntervalTime = () => {
     this.setState({ intervalTime: 0 });

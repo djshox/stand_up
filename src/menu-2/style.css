@@ -24,25 +24,15 @@ height: 100%;
   }
   
   .backGround{
-   background: radial-gradient(circle, #2779ae, #013b60 100%);
-  }
-
-  .happy{
-    width: 200px;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    opacity: 0.8;
-
+   /* background: radial-gradient(circle, #2779ae, #013b60 100%); */
   }
 
 .neons {
-   margin-top: 1rem;
+   margin-top: 5px;
    text-align: center;
-   margin-left: 0 ;
 }
 
-.neons h3 {
+.neons h4 {
    font-weight: bold;
   -webkit-animation: glow 2s ease-in-out infinite alternate;
   -moz-animation: glow 2s ease-in-out infinite alternate;
@@ -52,11 +42,11 @@ height: 100%;
 @keyframes glow {
      from {
       color: #fff;
-    text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 90px #00fff2;
+    text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2;
   }
   
   to {
      color: gray;
-    text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 1 90px #00fff2;
+    text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2;
   }
 }

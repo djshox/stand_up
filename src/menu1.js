@@ -39,7 +39,7 @@ function Menu1() {
                 </div>
             </div>
 
-            <Modal show={showV} onHide={handleCloseV}>
+            {/* <Modal show={showV} onHide={handleCloseV}>
                 <Modal.Body>
 
                     <ReactPlayer
@@ -51,9 +51,9 @@ function Menu1() {
                     />
                 </Modal.Body>
 
-            </Modal>
+            </Modal> */}
 
-        <div className="photos" onClick={() => h.push("/menu1/video")}>
+        {/* <div className="photos" onClick={() => h.push("/menu1/video")}>
           <div className="videos__body">
             <img
               onClick={handleShowV}
@@ -66,7 +66,7 @@ function Menu1() {
           <div className="videos__title">
             <h1>Videos:</h1>
           </div>
-        </div>
+        </div> */}
       </div>
 
     //   <Modal show={showV} onHide={handleCloseV}>

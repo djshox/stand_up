@@ -14,8 +14,32 @@ function Menu4() {
     return (
         <>
         <Navbar />
+      
         <div>
-           
+
+
+        {/* <div>
+                    <Link to="/menu4/">
+                        <div style={{ backgroundImage: "url(" + require('./images/tarix.jfif') + ")" }}></div>
+                    </Link>
+                    <Link to="/menu2">
+                        <div style={{ backgroundImage: "url(" + require('./images/prisyaga.jpg') + ")" }}></div>
+                    </Link>
+                    <Link to="/menu3">
+                        <div style={{ backgroundImage: "url(" + require('./images/prezident.jpg') + ")" }}></div>
+                    </Link>
+                    <Link to="/menu4">
+                        <div style={{ backgroundImage: "url(" + require('./images/veteranlar.jpg') + ")" }}></div>
+                    </Link>
+                    <Link to="/">
+                        <div style={{ backgroundImage: "url(" + require('./images/kisspng.jpg') + ")" }}></div>
+                    </Link>
+                </div>
+
+ */}
+
+
+
 <div className="equipment2__content">    
      <h4> Постановление
 Президента Республики Узбекистан
@@ -38,6 +62,18 @@ function Menu4() {
 </div>
       </div>      
         </div>
+<hr />
+
+
+
+<div>
+
+
+
+
+
+</div>
+
         </>
     );
 }
