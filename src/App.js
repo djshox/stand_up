@@ -11,6 +11,9 @@ import Menu3 from "./menu-3";
 import Menu3File1 from "./menu-3/file1";
 import Menu3File2 from "./menu-3/file2";
 import Menu4 from "./menu-4";
+import Info from "./menu-4/info";
+import Info1 from "./menu-4/info1";
+import Info2 from "./menu-4/info2";
 
 export default class App extends React.Component {
   state = {
@@ -53,13 +56,14 @@ export default class App extends React.Component {
           <Route path="/menu1" component={Menu1} exact />
           <Route path="/menu1/photos" component={Menu1Photos} />
           <Route path="/menu1/video" component={Menu1Video} />
-
           <Route path="/menu2" component={Menu2} />
-
           <Route path="/menu3" component={Menu3} exact />
           <Route path="/menu3/file1" component={Menu3File1} />
           <Route path="/menu3/file2" component={Menu3File2} />
-          <Route path="/menu4" component={Menu4} />
+          <Route path="/menu4" component={Menu4} exact />
+          <Route path="/menu4/info1" component={Info1} />
+          <Route path="/menu4/info2" component={Info2} />
+          <Route path="/info" component={Info} />
         </Switch>
       </div>
     );
