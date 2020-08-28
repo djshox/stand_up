@@ -26,26 +26,18 @@ function Menu2() {
 
     return (
         <div className='backGround'>
-
-            <div className="_navbar">
-                {/* <Breadcrumb>
-                    <Breadcrumb.Item >Home</Breadcrumb.Item>
-
-                    <Breadcrumb.Item active>Birthday</Breadcrumb.Item>
-                </Breadcrumb> */}
-                <Menu onClick={() => h.push("/")} mode="horizontal" theme="dark">
-                    <Menu.Item key="mail" >
-                        Home
+            <Menu onClick={() => h.push("/")} mode="horizontal" theme="dark" >
+                <Menu.Item key="mail" >
+                    Home
                     </Menu.Item>
-                </Menu>
-            </div>
+            </Menu>
 
-            <div className="row">
+            <div className="row m-0">
                 <div className="col-6 offset-3">
                     <div class="neons">
-                        <h3>Поздравляем с Днём Рождения!</h3>
+                        <h4 className="text-uppercase">туғилган КУНИНГИЗ БИЛАН ТАБРИКЛАЙМИЗ!!! </h4>
                     </div>
-                    <Carousel autoplay dotPosition="top">
+                    <Carousel autoplay dotPosition="top" className="ml-4 pl-4">
                         <div>
                             <img style={contentStyle} src={BACKEND_URL + "stand/images/Urmonov_R_S.jpg"}
                                 alt="Урмонов Р.С." />
