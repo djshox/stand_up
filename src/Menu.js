@@ -18,12 +18,12 @@ function Menu() {
                     <Link to="/menu2">
                         <div style={{ backgroundImage: "url(" + require('./images/tarix.jfif') + ")" }}></div>
                     </Link>
-                    <a href="#">
+                    <Link to="/">
                         <div style={{ backgroundImage: "url(" + require('./images/veteranlar.jpg') + ")" }}></div>
-                    </a>
-                    <a href="#">
+                    </Link>
+                    <Link to="/">
                         <div style={{ backgroundImage: "url(" + require('./images/prisyaga.jpg') + ")" }}></div>
-                    </a>
+                    </Link>
                     <Link to="/">
                         <div style={{ backgroundImage: "url(" + require('./images/kisspng.jpg') + ")" }}></div>
                     </Link>
