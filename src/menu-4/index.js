@@ -1,80 +1,135 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Modal from 'react-bootstrap/Modal';
+import { Link } from 'react-router-dom'
+import 'antd/dist/antd.css';
+import TopPage from 'components/topPage'
 
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import { Carousel } from 'react-responsive-carousel';
-import ReactPlayer from 'react-player';
-import "./menu4.css";
-import { BACKEND_URL } from "../setting.js"
-import Navbar from "../menu-1/navbar"
 
 function Menu4() {
-    
     return (
-        <>
-        <Navbar />
-      
-        <div>
+        <div className="bg-light">
+            <TopPage />
+            <div className="mx-4" style={{ height: "calc(100vh - 70px) " }}>
+                <table class="table table-bordered  mt-4 ">
+                    <thead>
+                        <tr>
+                            <th scope="col" className="text-center"> №</th>
+                            <th scope="col" className="text-center">Buyruq nomi</th>
+                            <th scope="col" className="text-center">Buyqur nomeri</th>
+                            <th scope="col" className="text-center">Tasdiqlangan sana</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>
+                                <Link to="/menu4/info1">Aholini ijtimoiy qo‘llab-quvvatlashga qaratilgan qo‘shimcha chora-tadbirlar to‘g‘risida
+                                </Link>
+                            </td>
+                            <td>PQ-4815-son</td>
+                            <td> 26.09.2020</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td> <Link to="/menu4/info2">
+                                Ўзбекистон Республикаси Вазирлар Маҳкамасининг
+қарори</Link></td>
+                            <td>№ 511</td>
+                            <td>25.08.2020</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td> <Link to="/info">
+                                2020-2022 йилларда Қашқадарё вилоятининг Қарши туманини ижтимоий-иқтисодий ривожлантириш ва камбағалликни қисқартириш чора-тадбирлари тўғрисида
+                                </Link>
+                            </td>
+                            <td>№ 519</td>
+                            <td> 27.08.2020</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td> <Link to="/info">
+                                Sug‘urtalovchining, sug‘urta brokerining hamda ular alohida bo‘linmalarining rahbariga va bosh buxgalteriga qo‘yiladigan malaka talablari to‘g‘risidagi nizomga o‘zgartirishlar kiritish haqida
+                                </Link>
+                            </td>
+                            <td>№ 2462-1</td>
+                            <td>25.08.2020</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td> <Link to="/info">
+                                Қишлоқ хўжалиги экинларини оқилона жойлаштириш тартиби тўғрисидаги низомни тасдиқлаш ҳақида</Link>
+                            </td>
+                            <td>№ 505</td>
+                            <td> 24.08.2020</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td> <Link to="/info">
+                                Андижон иқтисодиёт ва қурилиш институтини ташкил этиш тўғрисида
+                                </Link>
+                            </td>
+                            <td>№ 516</td>
+                            <td>26.08.2020</td>
+                        </tr>
 
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>
+                                <Link to="/info">Aholini ijtimoiy qo‘llab-quvvatlashga qaratilgan qo‘shimcha chora-tadbirlar to‘g‘risida
+                                </Link>
+                            </td>
+                            <td>PQ-4815-son</td>
+                            <td> 26.09.2020</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">8</th>
+                            <td> <Link to="/info">
+                                Andijon viloyatida axborot texnologiyalariga ixtisoslashgan texnologik parkni tashkil etish chora-tadbirlari to‘g‘risida </Link>
+                            </td>
+                            <td>№ 511</td>
+                            <td>25.08.2020</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">9</th>
+                            <td> <Link to="/info">
+                                2020-2022 йилларда Қашқадарё вилоятининг Қарши туманини ижтимоий-иқтисодий ривожлантириш ва камбағалликни қисқартириш чора-тадбирлари тўғрисида
+                                </Link>
+                            </td>
+                            <td>№ 519</td>
+                            <td> 27.08.2020</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10</th>
+                            <td> <Link to="/info">
+                                Sug‘urtalovchining, sug‘urta brokerining hamda ular alohida bo‘linmalarining rahbariga va bosh buxgalteriga qo‘yiladigan malaka talablari to‘g‘risidagi nizomga o‘zgartirishlar kiritish haqida
+                                </Link>
+                            </td>
+                            <td>№ 2462-1</td>
+                            <td>25.08.2020</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">11</th>
+                            <td> <Link to="/info">
+                                Қишлоқ хўжалиги экинларини оқилона жойлаштириш тартиби тўғрисидаги низомни тасдиқлаш ҳақида</Link>
+                            </td>
+                            <td>№ 505</td>
+                            <td> 24.08.2020</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">12</th>
+                            <td> <Link to="/info">
+                                Андижон иқтисодиёт ва қурилиш институтини ташкил этиш тўғрисида
+                                </Link>
+                            </td>
+                            <td>№ 516</td>
+                            <td>26.08.2020</td>
+                        </tr>
 
-        {/* <div>
-                    <Link to="/menu4/">
-                        <div style={{ backgroundImage: "url(" + require('./images/tarix.jfif') + ")" }}></div>
-                    </Link>
-                    <Link to="/menu2">
-                        <div style={{ backgroundImage: "url(" + require('./images/prisyaga.jpg') + ")" }}></div>
-                    </Link>
-                    <Link to="/menu3">
-                        <div style={{ backgroundImage: "url(" + require('./images/prezident.jpg') + ")" }}></div>
-                    </Link>
-                    <Link to="/menu4">
-                        <div style={{ backgroundImage: "url(" + require('./images/veteranlar.jpg') + ")" }}></div>
-                    </Link>
-                    <Link to="/">
-                        <div style={{ backgroundImage: "url(" + require('./images/kisspng.jpg') + ")" }}></div>
-                    </Link>
-                </div>
+                    </tbody>
+                </table>
 
- */}
-
-
-
-<div className="equipment2__content">    
-     <h4> Постановление
-Президента Республики Узбекистан
-</h4>
-</div>
-<div className="equipment2__text">
-Об утверждении Положения о порядке прохождения военной службы гражданами Республики Узбекистан
-В соответствии с законами Республики Узбекистан «О всеобщей воинской обязанности и военной службе», «О службе в резерве Вооруженных Сил Республики Узбекистан» и в целях дальнейшего совершенствования системы комплектования Вооруженных Сил Республики Узбекистан преданными Родине, всесторонне подготовленными к военной службе гражданами, порядка и условий прохождения ими военной службы, обеспечения постоянной боевой готовности войск к защите территориальной целостности и безопасности государства, а также социальной защиты военнослужащих и членов их семей:
-1. Утвердить обновленное Положение о порядке прохождения военной службы гражданами Республики Узбекистан согласно приложению № 1.
-2. Министерству обороны, Министерству внутренних дел, Национальной гвардии, Министерству по чрезвычайным ситуациям, Службе государственной безопасности, Государственной службе безопасности Президента Республики Узбекистан совместно с Министерством юстиции Республики Узбекистан и другими заинтересованными министерствами, ведомствами:
-в трехмесячный срок внести в Кабинет Министров Республики Узбекистан предложения об изменениях и дополнениях в законодательство, вытекающих из настоящего постановления;
-в двухмесячный срок привести принятые нормативно-правовые акты в соответствие с настоящим постановлением.
-3. Признать утратившими силу некоторые акты Президента Республики Узбекистан согласно приложению № 2.
-4. Контроль за исполнением настоящего постановления возложить на Премьер-министра Республики Узбекистан А.Н. Арипова и секретаря Совета безопасности при Президенте Республики Узбекистан В.В. Махмудова.
-Президент Республики Узбекистан Ш. МИРЗИЁЕВ
-<div className="equipment2__footer_text">
-г. Ташкент,<br/>
-12 сентября 2019 г.,
-<br/>№ ПП-4447
-</div>
-      </div>      
+            </div>
         </div>
-<hr />
-
-
-
-<div>
-
-
-
-
-
-</div>
-
-        </>
     );
 }
 

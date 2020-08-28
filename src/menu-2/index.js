@@ -1,19 +1,10 @@
 import React from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
-// import Modal from 'react-bootstrap/Modal';
-import { useHistory } from "react-router-dom";
-
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-// import { Carousel } from 'react-responsive-carousel';
-import { Carousel, Menu } from 'antd';
-import { MailOutlined } from '@ant-design/icons';
-
-// import ReactPlayer from 'react-player';
-import Breadcrumb from "react-bootstrap/esm/Breadcrumb";
-// import "./menu2.css";
+import { Carousel } from 'antd';
 import { BACKEND_URL } from "setting.js"
 import './style.css'
-import happy from './../images/happy.gif';
+import TopPage from 'components/topPage'
 
 const contentStyle = {
     height: 'calc( 100vh - 200px)',
@@ -22,15 +13,10 @@ const contentStyle = {
 };
 
 function Menu2() {
-    const h = useHistory()
 
     return (
         <div className='backGround'>
-            <Menu onClick={() => h.push("/")} mode="horizontal" theme="dark" >
-                <Menu.Item key="mail" >
-                    Home
-                    </Menu.Item>
-            </Menu>
+            < TopPage />
 
             <div className="row m-0">
                 <div className="col-6 offset-3">
@@ -50,14 +36,14 @@ function Menu2() {
                             <p className="text-center text-white mt-n2"> (Сержант III степени)</p>
                         </div>
 
-    </Carousel>
+                    </Carousel>
                 </div>
             </div>
-      </div>
-      
+        </div>
 
-    
-  );
+
+
+    );
 }
 
 export default Menu2;

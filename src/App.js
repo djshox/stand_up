@@ -9,6 +9,9 @@ import Menu1Video from "./menu-1/video";
 
 import Menu3 from "./menu-3";
 import Menu4 from "./menu-4";
+import Info from "./menu-4/info";
+import Info1 from "./menu-4/info1";
+import Info2 from "./menu-4/info2";
 
 export default class App extends React.Component {
   state = {
@@ -16,23 +19,23 @@ export default class App extends React.Component {
     intervalTime: 0,
   };
 
-//   componentDidMount() {
-//     this.interval = setInterval(() => {
-//       this.setState((prev) => {
-//         return { intervalTime: prev.intervalTime + 1 };
-//       });
-//     }, 1000);
-//   }
+  //   componentDidMount() {
+  //     this.interval = setInterval(() => {
+  //       this.setState((prev) => {
+  //         return { intervalTime: prev.intervalTime + 1 };
+  //       });
+  //     }, 1000);
+  //   }
 
-//   componentDidUpdate() {
-//     if (this.state.intervalTime === this.state.maxIntervalTime) {
-//       this.resetIntervalTime();
-//     }
-//   }
+  //   componentDidUpdate() {
+  //     if (this.state.intervalTime === this.state.maxIntervalTime) {
+  //       this.resetIntervalTime();
+  //     }
+  //   }
 
-//   componentWillUnmount() {
-//     clearInterval(this.interval);
-//   }
+  //   componentWillUnmount() {
+  //     clearInterval(this.interval);
+  //   }
 
   resetIntervalTime = () => {
     this.setState({ intervalTime: 0 });
@@ -55,7 +58,10 @@ export default class App extends React.Component {
           <Route path="/menu2" component={Menu2} />
 
           <Route path="/menu3" component={Menu3} />
-          <Route path="/menu4" component={Menu4} />
+          <Route path="/menu4" component={Menu4} exact />
+          <Route path="/menu4/info1" component={Info1} />
+          <Route path="/menu4/info2" component={Info2} />
+          <Route path="/info" component={Info} />
         </Switch>
       </div>
     );
