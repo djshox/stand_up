@@ -42,7 +42,9 @@ function Menu2() {
 
             <div className="row">
                 <div className="col-6 offset-3">
-                    <h4 className="text-center text-light font-weight-bold">Поздравляем с Днём Рождения!</h4>
+                    <div class="neons">
+                        <h3>Поздравляем с Днём Рождения!</h3>
+                    </div>
                     <Carousel autoplay dotPosition="top">
                         <div>
                             <img style={contentStyle} src={BACKEND_URL + "stand/images/Urmonov_R_S.jpg"}
@@ -57,7 +59,7 @@ function Menu2() {
                         </div>
 
                     </Carousel>
-                    <img src={happy} alt="a" className="happy" />
+                    {/* <img src={happy} alt="a" className="happy" /> */}
                 </div>
 
             </div>
