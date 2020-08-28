@@ -1,10 +1,10 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+// import ReactDOM from 'react-dom'
 import ModalVideo from 'react-modal-video'
-import Menu1 from "./menu1";
+// import Menu1 from "./menu1";
 //import 'node_modules/react-modal-video/scss/modal-video.scss';
 
-function ModalVideo1(){
+function ModalVideo1() {
 
     // constructor () {
     //     super();
@@ -24,15 +24,15 @@ function ModalVideo1(){
     const handleCloseV = () => setShowV(false);
 
 
-       return (
-            <div>
-                <ModalVideo channel='youtube'
-                            isOpen={showV}
-                            videoId='L61p2uyiMSo'
-                            onClose={handleCloseV()} />
-                <button onClick={handleShowV}>Open</button>
-            </div>
-        )
+    return (
+        <div>
+            <ModalVideo channel='youtube'
+                isOpen={showV}
+                videoId='L61p2uyiMSo'
+                onClose={handleCloseV()} />
+            <button onClick={handleShowV}>Open</button>
+        </div>
+    )
 
 }
 

@@ -3,10 +3,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Modal from 'react-bootstrap/Modal';
 
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import {Carousel} from 'react-responsive-carousel';
+import { Carousel } from 'react-responsive-carousel';
 import ReactPlayer from 'react-player';
 import "./menu1.css";
-
+import { BACKEND_URL } from "setting.js"
 
 function Menu2() {
     const [show, setShow] = React.useState(false);
@@ -21,7 +21,7 @@ function Menu2() {
             <div className="photos-videos">
                 <div className="photos">
 
-                    <div className="photos__body"><img onClick={handleShow} src="http://localhost/stand/images/happy1.jpg" className="rounded" width="30%"/></div>
+                    <div className="photos__body"><img onClick={handleShow} src={BACKEND_URL + "stand/images/happy1.jpg"} className="rounded" width="30%" /></div>
                     <div className="photos__title" ><h1>Photos:</h1></div>
                 </div>
 
@@ -39,16 +39,16 @@ function Menu2() {
                     <Carousel>
 
                         <div className="item active">
-                            <img src="http://localhost/stand/images/Urmonov_R_S.jpg"
-                                 alt="Урмонов Р.С." />
+                            <img src={BACKEND_URL + "stand/images/Urmonov_R_S.jpg"}
+                                alt="Урмонов Р.С." />
                             <div className="carousel-caption">
                                 <h2>Урмонов Р.С.</h2>
                                 <p>Сержант I степени</p>
                             </div>
                         </div>
                         <div className="item">
-                            <img src="http://localhost/stand/images/Kamoliddinov_A_U.jpg"
-                                 alt="Камолиддинов А.У." />
+                            <img src={BACKEND_URL + "stand/images/Kamoliddinov_A_U.jpg"}
+                                alt="Камолиддинов А.У." />
                             <div className="carousel-caption">
                                 <h3>Камолиддинов А.У.</h3>
                                 <p>Сержант II степени</p>
