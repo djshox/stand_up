@@ -1,25 +1,20 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ReactPlayer from 'react-player'
 
-function Player({ show, url, onEndedd, loop }) {
+function Player({ showControl, url, playing, loop, width, height, style, nextSlide }) {
 
-    const [videoFilePath, setVideoFileURL] = useState(null);
-    const handleVideoUpload = (event) => { setVideoFileURL(URL.createObjectURL(event.target.files[0])); };
-    console.log(videoFilePath);
     return (
         <div className="App">
-            <input type="file" onChange={handleVideoUpload} />
-
             <ReactPlayer
-                className='react-player fixed-bottom'
-                playing={show}
+                className='react-player'
+                playing={playing}
                 url={url}
-                width='100%'
-                height='100%'
+                width={width}
+                height={height}
+                onEnded={nextSlide}
                 controls={true}
-                onEnded={onEndedd}
-                loop={loop}
-
+                stopOnUnmount={false}
+                style={style}
             />
         </div>
     );

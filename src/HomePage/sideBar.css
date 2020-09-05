@@ -1,0 +1,76 @@
+.root {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.image {
+border-radius: 60px;  
+border: 5px solid rgba(52, 58, 64, 0.5);
+float: inline-end;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 25vh;
+  color: white;
+  font-size: 20px;
+  padding: 14px;
+  text-align: center;
+  opacity: 1;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+.menu-birthday {
+    box-sizing: border-box;
+    border: 2px solid red;
+    /* background-image: url("http://192.168.1.106:80/stand/images/happy1.jpg"); */
+    z-index: 999;
+    background-repeat: no-repeat;
+
+    /*background-size: cover;*/
+    margin: 0 auto;
+    height: 100%;
+    max-width: 75%;
+  }
+.menu-birthday img {
+  /*width: 100%;*/
+height: 100%;
+}
+  .menu-2-wrapper {
+    box-sizing: border-box;
+    border: 2px solid green;
+    margin: 1em 1.5em ;
+    height: 90vh;
+  }
+  
+ 
+.neons {
+   margin-bottom: 20px;
+   text-align: center;
+}
+
+.neons h4 {
+   font-weight: bold;
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+     from {
+      color: #fff;
+    text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2;
+  }
+  
+  to {
+     color: gray;
+    text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2;
+  }
+}
