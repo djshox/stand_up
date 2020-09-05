@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
 import HomePage from "./HomePage/HomePage";
-import Slider from "./HomePage/slider";
 const Actions = React.lazy(() => import('./Actions'))
 const Info = React.lazy(() => import('./Info/index'))
 
@@ -42,7 +41,6 @@ export default class App extends Component {
       <div onClick={this.resetIntervalTime} style={{ background: "radial-gradient(circle, #ffffff , #b7c0c9)", minHeight: '100vh' }}>
         <Switch>
           <Route path="/" render={() => <HomePage />} exact />
-          <Route path="/slide" render={() => <Slider />} exact />
           <Route path="/action/:id" exact render={() => <Actions />} />
           <Route path="/action/:actionId/info/:infoId" render={() => <Info />} />
         </Switch>
