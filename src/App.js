@@ -34,7 +34,7 @@ export default class App extends Component {
   };
   render() {
     const { intervalTime, maxIntervalTime } = this.state;
-    if (intervalTime === maxIntervalTime && window.location.href !== "http://localhost:3000/") {
+    if (intervalTime === maxIntervalTime && window.location.href !== "http://localhost/desktop/") {
       return <Redirect to="/" />;
     }
     return (

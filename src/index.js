@@ -17,7 +17,7 @@ ReactDOM.render(
     <Suspense fallback={
       <LoadingOutlined className="float-right m-4" />
     }>
-      <Router>
+      <Router basename={'/desktop'}>
         <App />
       </Router>
     </Suspense>

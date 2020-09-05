@@ -68,11 +68,11 @@ const HomePage = ({ setSlidersThunk, getBirthDaysThunk, getSliders, getBirthDays
 
   useEffect(() => {
 
-    if (Hour === 9) {
+    if (Hour >= 8) {
       localStorage.setItem("gimnPlayed", true)
       setGimnPlayed(true)
     }
-    else if (Hour === 21) {
+    else if (Hour === 7) {
       localStorage.setItem("gimnPlayed", false)
       setGimnPlayed(false)
       // setisVideo(false)
